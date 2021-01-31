@@ -1,0 +1,47 @@
+h1 {
+  color: red;
+}
+
+#center {
+  align-items: center;
+}
+
+#spread {
+  width: 300px;
+}
+
+#space {
+  align-items: center;
+}
+
+#one {
+  width: 200px;
+  border: 2px solid #0088dd;
+  padding: 10px;
+}
+
+#two {
+  width: 200px;
+  border: 2px solid #0088dd;
+  padding: 10px;
+}
+#three {
+  width: 200px;
+  border: 2px solid #0088dd;
+  padding: 10px;
+}
+#four {
+  width: 200px;
+  border: 2px solid #0088dd;
+  padding: 10px;
+}
+
+#move {
+  text-align: center;
+  padding: 10px;
+}
+
+#player {
+  padding: 80px;
+  width: 200px;
+}
