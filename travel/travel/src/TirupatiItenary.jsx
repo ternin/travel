@@ -4,10 +4,9 @@ import Pune from './Pune'
 
 const BookCab =()=>{
     return (
-        <Table striped bordered hover variant="dark">
+        <Table striped bordered hover variant="dark" size="sm" responsive>
   <thead>
     <tr>
-      
       <th>Name</th>
       <th>Phone</th>
       </tr>
@@ -22,7 +21,7 @@ const BookCab =()=>{
 
     )
 }
-function MyVerticallyCenteredModal(props) {
+function TravelModal(props) {
     return (
 <Modal
         {...props}
@@ -50,10 +49,10 @@ function TirupatiItenary() {
     const [modalShow, setModalShow] = useState(false);
     return (
         <div>
-<Table striped bordered hover variant="dark">
+          
+<Table striped bordered hover variant="dark" size="sm" responsive>
   <thead>
     <tr>
-      
       <th>Onward</th>
       <th>TrainNo</th>
       <th>From</th>
@@ -61,18 +60,17 @@ function TirupatiItenary() {
       <th>Start</th>
       <th>Arrival</th>
       <th>Buffer Time</th>
-     
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>Book</td>
       <td>16381</td>
-      <td>pune</td>
+      <td>Pune</td>
       <td>Raichur</td>
       <td>07:15PM</td>
       <td>6:20AM</td>
-      <td><a href='#'  onClick={()=> setModalShow(true)}>15hrs Click To Book Cab</a><MyVerticallyCenteredModal
+      <td><a href='#'  onClick={()=> setModalShow(true)}>15hrs</a><TravelModal
         show={modalShow}
         onHide={() => setModalShow(false)}
             /></td>
@@ -81,11 +79,11 @@ function TirupatiItenary() {
     <tr>
       <td>Book</td>
       <td>12794</td>
-      <td>raichur</td>
-      <td>10:35PM</td>
+      <td>Raichur</td>
       <td>Tirupati</td>
+      <td>10:35PM</td>
       <td>06:15AM</td>
-      <td>Destination</td>
+      <td>Destination 1 Day Stay</td>
     </tr>
     <tr>
       <th>Return</th>
@@ -98,7 +96,7 @@ function TirupatiItenary() {
     <tr>
       <td>Book</td>
       <td>11074</td>
-      <td>tirupati</td>
+      <td>Tirupati</td>
       <td>Pune</td>
       <td>03:00PM</td>
       <td>9:30AM</td>
@@ -106,6 +104,7 @@ function TirupatiItenary() {
     </tr>
   </tbody>
 </Table>
+
         </div>
     )
 }
