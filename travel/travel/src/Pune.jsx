@@ -1,34 +1,9 @@
 import React,{useState} from 'react'
 import {Card,Modal} from 'react-bootstrap'
-import PlacesPune from './PlacesPune'
 
-
-function MyVerticallyCenteredModal(props) {
-    return (
-      <Modal
-        {...props}
-        size="md"
-        aria-labelledby="contained-modal-title-vcenter"
-        centered
-      >
-        <Modal.Header closeButton>
-          <Modal.Title id="contained-modal-title-vcenter">
-           Places To Visit In Pune
-          </Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          <p>
-           <PlacesPune/>
-          </p>
-        </Modal.Body>
-       
-      </Modal>
-    );
-  }
 
 
 function Pune() {
-    const [modalShow, setModalShow] = useState(false);
 
     const pune = {
         pune : 'Pune',
@@ -40,8 +15,8 @@ function Pune() {
         
         return (
             <div  id='move' >  
-            <Card style={{ width: '18rem' }}>
-            <Card.Img variant="top" src={pune.imageUrl} variant="primary" onClick={() => setModalShow(true)}/>
+            <Card style={{ width: '18rem' }} size="sm" responsive>
+            <Card.Img variant="top" src={pune.imageUrl}  onClick={() => window.open("https://www.treebo.com/blog/places-to-visit-in-pune/")}/>
             <Card.Body>
             <Card.Title>{pune.pune}</Card.Title>    
             <Card.Text>                
@@ -58,11 +33,6 @@ function Pune() {
     return (
         <>
         <Pune/>
-        <MyVerticallyCenteredModal
-        show={modalShow}
-        onHide={() => setModalShow(false)}
-            />
-     
          </>
     )
 }

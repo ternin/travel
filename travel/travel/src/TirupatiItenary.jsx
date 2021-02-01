@@ -70,10 +70,7 @@ function TirupatiItenary() {
       <td>Raichur</td>
       <td>07:15PM</td>
       <td>6:20AM</td>
-      <td><a href='#'  onClick={()=> setModalShow(true)}>15hrs</a><TravelModal
-        show={modalShow}
-        onHide={() => setModalShow(false)}
-            /></td>
+      <td><a href='#' onClick={()=> window.open("https://artours-and-travels-car-rental-in-raichur.business.site/?utm_source=gmb&utm_medium=referral")}>15hrs(Book Cab)</a></td>
     </tr>
     
     <tr>
@@ -83,7 +80,7 @@ function TirupatiItenary() {
       <td>Tirupati</td>
       <td>10:35PM</td>
       <td>06:15AM</td>
-      <td>Destination 1 Day Stay</td>
+      <td><a href='#' onClick={()=> window.open("https://www.goibibo.com/hotels/find-hotels-in-Tirupati/18688368793823515/18688368793823515/%7B%22d%22:%7B%22k%22:10%7D%7D/?sec=dom&utm_source=google&utm_medium=cpc&utm_campaign=Hotel_Destination_Tirupati&utm_content=Book%20Hotels%20Tirupati&utm_keyword=Hotel%20booking%20tirupati&campaign=Hotel_Destination_Tirupati&gclid=Cj0KCQiA6t6ABhDMARIsAONIYyzbovayJFt5cw8Ow3eZv1cB9iOlUltmiSZuNwSxFYZQnrRPwbrn68oaAhmgEALw_wcB")}>Destination 1 Day Stay(Book Hotel)</a></td>
     </tr>
     <tr>
       <th>Return</th>

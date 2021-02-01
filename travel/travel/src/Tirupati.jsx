@@ -2,9 +2,9 @@ import React,{useState} from 'react'
 import {Card} from 'react-bootstrap'
 import Pune from './Pune'
 import Raichur from './Raichur'
-import {Modal,Button,Row,Col,Form,Accordion} from 'react-bootstrap'
+import {Modal,Button,CardDeck, Container,Row} from 'react-bootstrap'
 import TirupatiItenary from './TirupatiItenary'
-import Live from './Live'
+//import Live from './Live'
 
 
 function MyVerticallyCenteredModal(props) {
@@ -48,8 +48,8 @@ function Tirupati() {
     
        return (
         <div id='move'>
-        <Card style={{ width: '18rem' }}>
-        <Card.Img variant="top" src={tirupati.imageUrl} />
+        <Card style={{ width: '18rem' }}  size="sm" responsive>
+        <Card.Img variant="top" src={tirupati.imageUrl} onClick={()=>window.open("https://www.tripadvisor.in/Attractions-g297587-Activities-Tirupati_Chittoor_District_Andhra_Pradesh.html")}/>
         <Card.Body>
         <Card.Title>{tirupati.tirupati}</Card.Title>
         <Card.Text>
@@ -67,15 +67,24 @@ function Tirupati() {
 <div>     
 
     <h1>Onward</h1>  
-            <div class="row">
+            <div align='center'>
+              <Container fluid ="sm">
+              <CardDeck >
                 <Pune />
                 <Raichur/>
                 <Tirupati/>
+                </CardDeck>
+                </Container>
             </div>
      <h1>Return</h1>
-            <div class="row">
+            <div id="space">
+              <Container fluid="sm">
+                
+              <CardDeck>
             <Tirupati/>
             <Pune />
+            </CardDeck>
+            </Container>
             </div>
       <Button variant="primary" onClick={() => setModalShow(true)}>
         Click For TRAVEL Itenary
@@ -84,21 +93,6 @@ function Tirupati() {
         show={modalShow}
         onHide={() => setModalShow(false)}
             />
-            
-<Accordion defaultActiveKey="0">
-  <Card>
-    <Card.Header>
-      <Accordion.Toggle as={Button} variant="link" eventKey="0">
-         People Traveling Live 
-      </Accordion.Toggle>
-    </Card.Header>
-    <Accordion.Collapse eventKey="0">
-    <div id="center" >
-        <Live/>
-    </div>
-    </Accordion.Collapse>
-    </Card>
-  </Accordion>
 </div>
         
     )
