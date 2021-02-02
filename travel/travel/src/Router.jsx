@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 //import Raichur from './Raichur'
-import Vishakapatnam from './Vishakapatnam'
-import Tirupati from './Tirupati'
+import ToVishakapatnam from './ToVishakapatnam'
+import ToTirupati from './ToTirupati'
 
 
 function Router() {
@@ -14,9 +14,9 @@ function Router() {
     document.title = selection
     switch(selection){
         case 'tirupati':
-            return  setState(<Tirupati/>)
+            return  setState(<ToTirupati/>)
         case 'vishakapatnam':
-            return  setState(<Vishakapatnam/>)
+            return  setState(<ToVishakapatnam/>)
 
             
     }   

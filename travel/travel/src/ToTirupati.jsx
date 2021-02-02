@@ -1,11 +1,9 @@
 import React,{useState} from 'react'
-import {Card} from 'react-bootstrap'
-import Pune from './Pune'
-import Raichur from './Raichur'
+//import Tirupati from './Places/Tirupati'
+import {Pune,Raichur,Tirupati} from './Places/Places'
+//import Raichur from './Places/Raichur'
 import {Modal,Button,CardDeck, Container,Row} from 'react-bootstrap'
-import TirupatiItenary from './TirupatiItenary'
-//import Live from './Live'
-
+import TirupatiItenary from './Itenary/TirupatiItenary'
 
 function MyVerticallyCenteredModal(props) {
     return (
@@ -31,42 +29,11 @@ function MyVerticallyCenteredModal(props) {
     );
   }
 
-
-function Tirupati() {
+function ToTirupati() {
     const [modalShow, setModalShow] = useState(false);
-
-    const tirupati = {
-        tirupati : 'Tirupati',
-        imageUrl : 'https://cdn.pixabay.com/photo/2020/08/02/11/20/chennai-to-tirupati-package-5457397__480.jpg',
-        description: 'Tirupati is a cultural city of india  '
-    }
-    
-
-   
-
-   const Tirupati = () => {
-    
-       return (
-        <div id='move'>
-        <Card style={{ width: '18rem' }}  size="sm" responsive>
-        <Card.Img variant="top" src={tirupati.imageUrl} onClick={()=>window.open("https://www.tripadvisor.in/Attractions-g297587-Activities-Tirupati_Chittoor_District_Andhra_Pradesh.html")}/>
-        <Card.Body>
-        <Card.Title>{tirupati.tirupati}</Card.Title>
-        <Card.Text>
-            {tirupati.description}
-            </Card.Text>   
-            </Card.Body>
-            </Card>
-        </div>
-
-       )
-   }
-
     return (
-
-<div>     
-
-    <h1>Onward</h1>  
+        <div>
+            <h1>Onward</h1>  
             <div align='center'>
               <Container fluid ="sm">
               <CardDeck >
@@ -93,9 +60,9 @@ function Tirupati() {
         show={modalShow}
         onHide={() => setModalShow(false)}
             />
-</div>
-        
+            
+        </div>
     )
 }
 
-export default Tirupati
+export default ToTirupati
