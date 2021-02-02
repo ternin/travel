@@ -28,11 +28,11 @@ const warangal = {
     about: 'Warangal is a city in the south Indian state of Telangana. It was the capital of the Kakatiya dynasty from the 12th to 14th centuries   '
 } 
 
-const vpatnam = {
-    vpatnam : 'Vishakapatnam',
-    imageUrl : 'https://media.istockphoto.com/photos/ramappa-temple-palampet-warangal-telangana-india-picture-id1007840372?k=6&m=1007840372&s=612x612&w=0&h=aiYAUrN98Vdrru4xlI3l8BeN3xJFRjC_DYZXEjA908M=',
-    redirect : 'https://www.thrillophilia.com/destinations/visakhapatnam/places-to-visit',
-    about: 'Warangal is a city in the south Indian state of Telangana. It was the capital of the Kakatiya dynasty from the 12th to 14th centuries   '
+const vizag = {
+    vizag : 'Vishakapatnam',
+    imageUrl : 'https://media.istockphoto.com/photos/vizag-andhra-pradesh-picture-id904650758?k=6&m=904650758&s=612x612&w=0&h=Yf-boHj1YjKhwKbY87O9U5HlnI3ICt2XL3jFDqouOKs=',
+    redirect : 'https://www.holidify.com/places/visakhapatnam/sightseeing-and-things-to-do.html',
+    about:      "Visakhapatnam's history stretches back to the 6th century BCE, when it was considered a part of the Kalinga Kingdom, and later ruled by the Vengi "
 }
 
 
@@ -150,6 +150,33 @@ export function Warangal() {
     )
 }
 
+export function Vizag() {
+
+    const Vizag = () => {
+     
+        return (
+         <div id='move'>
+         <Card style={{ width: '18rem' }}  size="sm" responsive>
+         <Card.Img variant="top" src={vizag.imageUrl} onClick={()=>window.open(vizag.redirect)}/>
+         <Card.Body>
+         <Card.Title>{vizag.vizag}</Card.Title>
+         <Card.Text>
+             {vizag.about}
+             </Card.Text>   
+             </Card.Body>
+             </Card>
+         </div>
+ 
+        )
+    }
+ 
+     return (
+ <div>     
+ <Vizag/>     
+ </div>
+         
+     )
+ }
 
 
 

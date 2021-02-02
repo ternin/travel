@@ -1,11 +1,9 @@
 import React,{useState} from 'react'
-//import Tirupati from './Places/Tirupati'
 import {Pune,Raichur,Tirupati} from './Places/Places'
-//import Raichur from './Places/Raichur'
-import {Modal,Button,CardDeck, Container,Row} from 'react-bootstrap'
-import TirupatiItenary from './Itenary/TirupatiItenary'
+import {Modal,Button,CardDeck,Container} from 'react-bootstrap'
+import {TirupatiItenary} from './Itenary/Itenary'
 
-function MyVerticallyCenteredModal(props) {
+function TirupatiModal(props) {
     return (
       <Modal
         {...props}
@@ -56,7 +54,7 @@ function ToTirupati() {
       <Button variant="primary" onClick={() => setModalShow(true)}>
         Click For TRAVEL Itenary
       </Button>
-      <MyVerticallyCenteredModal
+      <TirupatiModal
         show={modalShow}
         onHide={() => setModalShow(false)}
             />
