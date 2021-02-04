@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import {Pune,Warangal,Vizag} from './Places/Places'
-import {Modal,Button,CardDeck, Container,Row} from 'react-bootstrap'
+import {Modal,Button,CardDeck,Container} from 'react-bootstrap'
 import {VizagItenary} from './Itenary/Itenary'
 
 function VizagModal(props) {

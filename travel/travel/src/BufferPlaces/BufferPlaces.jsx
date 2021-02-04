@@ -50,3 +50,48 @@ export function RaichurPlaces() {
     </div>
     )
 }
+
+export function WarangalPlaces() {
+  return (
+      <div>
+<Table striped bordered hover variant="dark" size="sm" responsive>
+<thead>
+  <tr>
+    <th>Name</th>
+    <th>Distance From Station</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>Laknavaram Lake</td>
+    <td>68Km</td>
+    </tr>
+    <tr>
+    <td>Thousand Pillar Temple</td>
+    <td>6Km</td>
+    </tr>
+    <tr>
+    <td>Ramalingeswara Temple</td>
+    <td>2Km</td>
+    </tr>
+    <tr>
+    <td>Warangal Fort</td>
+    <td>2Km</td>
+    </tr>
+    <tr>
+    <td> Bhadrakali Temple</td>
+    <td>2.9Km</td>
+    </tr>
+    <tr>
+    <td>Khush Mahal</td>
+    <td>2.9Km</td>
+    </tr>
+    <tr>
+    <td>Pakhal Lake</td>
+    <td>53Km</td>
+    </tr>
+    </tbody>
+  </Table>
+  </div>
+  )
+}

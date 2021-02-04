@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import {Table} from 'react-bootstrap'
-import {RaichurModal} from '../MyModal/MyModal'
+import {RaichurModal,WarangalModal} from '../MyModal/MyModal'
 
 
 export function TirupatiItenary() {
@@ -69,6 +69,7 @@ export function TirupatiItenary() {
 
 
 export function VizagItenary() {
+  const [modalShow, setModalShow] = useState(false);
   
     return (
         <div>
@@ -93,7 +94,10 @@ export function VizagItenary() {
       <td>Warangal</td>
       <td>7:00PM</td>
       <td>10:18AM</td>
-      <td><a href='#' onClick={()=> window.open("https://artours-and-travels-car-rental-in-raichur.business.site/?utm_source=gmb&utm_medium=referral")}>Approx 12hrs </a></td>
+      <td><a href='#' onClick={()=> setModalShow(true)}>Approx 12hrs</a><WarangalModal
+        show={modalShow}
+        onHide={() => setModalShow(false)}
+            /></td>
     </tr>
     
     <tr>
