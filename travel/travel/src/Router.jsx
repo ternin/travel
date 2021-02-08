@@ -2,13 +2,12 @@ import React,{useState} from 'react'
 //import Raichur from './Raichur'
 import ToVishakapatnam from './ToVishakapatnam'
 import ToTirupati from './ToTirupati'
+import ToWarangal from './ToWarangal'
 
 
 function Router() {
     const[state,setState] = useState('')
 
-   
-    
     const handleSelect=(e)=>{
     const selection = e.target.value
     document.title = selection
@@ -17,6 +16,8 @@ function Router() {
             return  setState(<ToTirupati/>)
         case 'vishakapatnam':
             return  setState(<ToVishakapatnam/>)
+        case 'warangal':
+            return  setState(<ToWarangal/>)
 
             
     }   
@@ -39,6 +40,7 @@ function Router() {
                 <option  value='to'>To</option>
                 <option  value='tirupati'>Tirupati</option>
                 <option value='vishakapatnam'>Vishakapatnam</option>
+                <option value='warangal'>Warangal</option>
             </select>
                 {state}
          

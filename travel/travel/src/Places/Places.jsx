@@ -35,6 +35,13 @@ const vizag = {
     about:      "Visakhapatnam's history stretches back to the 6th century BCE, when it was considered a part of the Kalinga Kingdom, and later ruled by the Vengi "
 }
 
+const secundrabad = {
+    secundrabad : 'Secundrabad',
+    imageUrl : 'https://media.istockphoto.com/photos/architecture-picture-id951785406?b=1&k=6&m=951785406&s=170667a&w=0&h=hpkK8Z6TCPvOCEXjRdJnvLQOwWqSl7SJY-B4KSBVUiI=',
+    redirect : '',
+    about:      "Secunderabad is the twin city of Hyderabad in the Indian state of Telangana. Named after Sikandar Jah, the third Nizam of the Asaf Jahi dynasty "
+}
+
 
 
 export function Pune() {
@@ -177,6 +184,36 @@ export function Vizag() {
          
      )
  }
+
+
+ export function Secundrabad() {
+
+    const Secundrabad = () => {
+     
+        return (
+         <div id='move'>
+         <Card style={{ width: '18rem' }}  size="sm" responsive>
+         <Card.Img variant="top" src={secundrabad.imageUrl} onClick={()=>window.open(secundrabad.redirect)}/>
+         <Card.Body>
+         <Card.Title>{secundrabad.secundrabad}</Card.Title>
+         <Card.Text>
+             {secundrabad.about}
+             </Card.Text>   
+             </Card.Body>
+             </Card>
+         </div>
+ 
+        )
+    }
+ 
+     return (
+ <div>     
+ <Secundrabad/>     
+ </div>
+         
+     )
+ }
+
 
 
 

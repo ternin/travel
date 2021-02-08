@@ -1,10 +1,10 @@
 import React,{useState} from 'react'
-import {Pune,Raichur,Tirupati} from './Places/Places'
+import {Pune,Secundrabad,Warangal} from './Places/Places'
 import {Button,CardDeck,Container} from 'react-bootstrap'
-import {TirupatiModal} from './Itenary/MainItenary'
+import {WarangalModal} from './Itenary/MainItenary'
 
 
-function ToTirupati() {
+function ToWarangal() {
     const [modalShow, setModalShow] = useState(false);
     return (
         <div>
@@ -13,17 +13,16 @@ function ToTirupati() {
               <Container fluid ="sm">
               <CardDeck >
                 <Pune />
-                <Raichur/>
-                <Tirupati/>
+                <Secundrabad/>
+                <Warangal/>
                 </CardDeck>
                 </Container>
             </div>
      <h1>Return</h1>
             <div id="space">
               <Container fluid="sm">
-                
               <CardDeck>
-            <Tirupati/>
+            <Warangal/>
             <Pune />
             </CardDeck>
             </Container>
@@ -31,7 +30,7 @@ function ToTirupati() {
       <Button variant="primary" onClick={() => setModalShow(true)}>
         Click For TRAVEL Itenary
       </Button>
-      <TirupatiModal
+      <WarangalModal
         show={modalShow}
         onHide={() => setModalShow(false)}
             />
@@ -40,4 +39,4 @@ function ToTirupati() {
     )
 }
 
-export default ToTirupati
+export default ToWarangal

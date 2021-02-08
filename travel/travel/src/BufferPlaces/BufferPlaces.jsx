@@ -95,3 +95,65 @@ export function WarangalPlaces() {
   </div>
   )
 }
+
+
+export function SecundrabadPlaces() {
+  return (
+      <div>
+<Table striped bordered hover variant="dark" size="sm" responsive>
+<thead>
+  <tr>
+    <th>Name</th>
+    <th>Distance From Station</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>Secunderabad clock tower</td>
+    <td>1.2Km</td>
+    </tr>
+    <tr>
+    <td>Shamirpet Lake</td>
+    <td>23Km</td>
+    </tr>
+    <tr>
+    <td>Hussain Sagar Lake</td>
+    <td>7.1Km</td>
+    </tr>
+    <tr>
+    <td>Peddamma temple</td>
+    <td>3.8Km</td>
+    </tr>
+    <tr>
+    <td>Paigah palace</td>
+    <td>4Km</td>
+    </tr>
+    <tr>
+    <td>All Saints Church</td>
+    <td>5.8Km</td>
+    </tr>
+    <tr>
+    <td>Sri Ganesh temple</td>
+    <td>2.6Km</td>
+    </tr>
+    <tr>
+    <td>Jeedimetla Chevuru</td>
+    <td>13.8Km</td>
+    </tr>
+    <tr>
+    <td>Kandlakoya Oxygen Park</td>
+    <td>23Km</td>
+    </tr>
+    <tr>
+    <td>Kapra Lake</td>
+    <td>11.2Km</td>
+    </tr>
+    <tr>
+    <td>Shamirpet Deer Park</td>
+    <td>23Km</td>
+    </tr>
+    </tbody>
+  </Table>
+  </div>
+  )
+}
