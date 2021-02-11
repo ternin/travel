@@ -5,7 +5,7 @@ import {VirtualModalRaichur} from '../MyModal/MyVirtualModal'
 
 
 
-export function VirtualTour() {
+export function RaichurVirtualTour() {
     const [State,setState] = useState(false)
     return (
         <div>
@@ -20,4 +20,35 @@ export function VirtualTour() {
     )
 }
 
+
+export function WarangalVirtualTour() {
+    const [State,setState] = useState(false)
+    return (
+        <div>
+            <Button variant="primary" onClick={() => setState(true)}>
+            Click For Virtual Tour
+      </Button>
+      <VirtualModalRaichur
+        show={State}
+        onHide={() => setState(false)}
+            />
+        </div>
+    )
+}
+
+
+export function SecundrabadVirtualTour() {
+    const [State,setState] = useState(false)
+    return (
+        <div>
+            <Button variant="primary" onClick={() => setState(true)}>
+            Click For Virtual Tour
+      </Button>
+      <VirtualModalRaichur
+        show={State}
+        onHide={() => setState(false)}
+            />
+        </div>
+    )
+}
 

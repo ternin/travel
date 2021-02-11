@@ -1,7 +1,7 @@
 import React from 'react'
 import {Modal} from 'react-bootstrap'
 import {RaichurPlaces,WarangalPlaces,SecundrabadPlaces} from '../BufferPlaces/BufferPlaces'
-import {VirtualTour} from '../VirtualTour/VirtualTour'
+import {RaichurVirtualTour} from '../VirtualTour/VirtualTour'
 
 
 
@@ -19,11 +19,11 @@ export function RaichurModal (props) {
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <h4>Places You Can See In Buffer Time</h4>
+          <h4>Places You Can See </h4>
           <p>
            <RaichurPlaces/>
           </p>
-          <VirtualTour/>
+          <RaichurVirtualTour/>
         </Modal.Body>
        
       </Modal>
@@ -44,11 +44,11 @@ export function WarangalModal (props) {
             </Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <h4>Places You Can See In Buffer Time</h4>
+            <h4>Places You Can See </h4>
             <p>
              <WarangalPlaces/>
             </p>
-            <VirtualTour/>
+            
           </Modal.Body>
          
         </Modal>
@@ -69,11 +69,11 @@ export function WarangalModal (props) {
               </Modal.Title>
             </Modal.Header>
             <Modal.Body>
-              <h4>Places You Can See In Buffer Time</h4>
+              <h4>Places You Can See </h4>
               <p>
                <SecundrabadPlaces/>
               </p>
-              <VirtualTour/>
+              
             </Modal.Body>
           </Modal>
             );
