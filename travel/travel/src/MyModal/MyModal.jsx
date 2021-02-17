@@ -1,7 +1,7 @@
 import React from 'react'
 import {Modal} from 'react-bootstrap'
 import {RaichurPlaces,WarangalPlaces,SecundrabadPlaces} from '../BufferPlaces/BufferPlaces'
-import {RaichurVirtualTour} from '../VirtualTour/VirtualTour'
+//import {RaichurVirtualTour} from '../VirtualTour/VirtualTour'
 
 
 
@@ -23,7 +23,7 @@ export function RaichurModal (props) {
           <p>
            <RaichurPlaces/>
           </p>
-          <RaichurVirtualTour/>
+          
         </Modal.Body>
        
       </Modal>

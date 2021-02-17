@@ -67,7 +67,6 @@ export function TirupatiItenary() {
     )
 }
 
-
 export function VizagItenary() {
   const [modalShow, setModalShow] = useState(false);
   
@@ -201,7 +200,6 @@ export function WarangalItenary() {
         </div>
     )
 }
-
 
 export function VijaywadaItenary() {
   const [modalShow, setModalShow] = useState(false);
